@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Tale of Two Sisters</title>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    <header class="mt-20 flex topnav justify-end max-sm:justify-end">
+      
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
+        <button
+          id="btnOpen"
+          class="topnav__open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <img
+            class="mt-1"
+            src="app\img\hamburger.svg"
+            alt=""
+            width="40"
+            height="24"
+          />
+        </button>
+        <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button
+            id="btnClose"
+            class="topnav__close -mt-2 -mr-2"
+            aria-label="Close"
+          >
+            <img src="app\img\close.svg" alt="" />
+          </button>
+          <ul class="topnav__links -ml-4 max-sm:text-4xl max-sm:-ml-4">
+            <li class="topnav__item">
+              <a href="" class="topnav__link">About us</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">What we do</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Collections</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <main>
+      
+    </main>
+  </body>
+</html>

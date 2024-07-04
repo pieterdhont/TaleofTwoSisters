@@ -1,0 +1,8 @@
+@use '../globals';
+
+.socials {
+
+  @media (width < 50em) {
+    display: none;
+  }
+}

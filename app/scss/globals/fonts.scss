@@ -1,0 +1,20 @@
+:root {
+	--font-body: Arial, sans-serif;
+
+
+}
+
+@font-face {
+	font-family: 'Review Poster';
+	src: url('../app/img/ReviewPoster-Regular-Web.woff2')format('woff2');
+
+
+}
+
+@font-face {
+	font-family: 'TAN-MONCHERI';
+	src: url('../app/img/TAN-MONCHERI.woff2')format('woff2'),
+	     url('../app/img/TAN-MONCHERI.woff')format('woff'),
+	     url('../app/img/TAN-MONCHERI.ttf')format('truetype');
+
+}

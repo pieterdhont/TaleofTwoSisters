@@ -1,0 +1,57 @@
+:root {
+  --font-body: Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Review Poster";
+  src: url("../app/img/ReviewPoster-Regular-Web.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TAN-MONCHERI";
+  src: url("../app/img/TAN-MONCHERI.woff2") format("woff2"), url("../app/img/TAN-MONCHERI.woff") format("woff"), url("../app/img/TAN-MONCHERI.ttf") format("truetype");
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --mint-green: #bfd0c6;
+  --mustard-yellow: #c5b672;
+  --bright-teal: #02ccbc;
+  --forest-green: #349470;
+  --teal-green: #00625f;
+  --berry-purple: #7c287f;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+@media (width < 50em) {
+  .socials {
+    display: none;
+  }
+}/*# sourceMappingURL=socials.css.map */

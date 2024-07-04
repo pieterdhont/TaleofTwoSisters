@@ -35,6 +35,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-image: url("/app/img/graaggezien.jpg");
+  background-size: auto;
 }
 
 h1,

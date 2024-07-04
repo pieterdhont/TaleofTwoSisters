@@ -1,4 +1,3 @@
-// Initialize modules
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
@@ -7,21 +6,40 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
+const tailwindcss = require('tailwindcss');
 
-// Sass Task
+// Paths
+const paths = {
+  styles: {
+    src: 'app/scss/style.scss',
+    dest: 'dist'
+  },
+  scripts: {
+    src: 'app/js/script.js',
+    dest: 'dist'
+  }
+};
+
+// Sass and Tailwind CSS Task
 function scssTask() {
-  return src('app/scss/style.scss', { sourcemaps: true })
+  return src(paths.styles.src, { sourcemaps: true })
+    .pipe(postcss([
+      tailwindcss(),
+      autoprefixer()
+    ]))
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(postcss([
+      cssnano()
+    ]))
+    .pipe(dest(paths.styles.dest, { sourcemaps: '.' }));
 }
 
 // JavaScript Task
 function jsTask() {
-  return src('app/js/script.js', { sourcemaps: true })
+  return src(paths.scripts.src, { sourcemaps: true })
     .pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(terser())
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(dest(paths.scripts.dest, { sourcemaps: '.' }));
 }
 
 // Browsersync
@@ -49,7 +67,7 @@ function browserSyncReload(cb) {
 function watchTask() {
   watch('*.html', browserSyncReload);
   watch(
-    ['app/scss/**/*.scss', 'app/**/*.js'],
+    [paths.styles.src, 'app/scss/**/*.scss', paths.scripts.src],
     series(scssTask, jsTask, browserSyncReload)
   );
 }

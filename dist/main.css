@@ -52,8 +52,6 @@ a:active {
   text-decoration: none;
 }
 
-@media (width < 50em) {
-  .socials {
-    display: none;
-  }
-}/*# sourceMappingURL=socials.css.map */
+.wrapper {
+  background-color: rgba(172, 158, 97, 0.3);
+}/*# sourceMappingURL=main.css.map */

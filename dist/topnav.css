@@ -35,7 +35,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../app/img/graaggezien.jpeg");
+  background-image: url("../app/img/graaggezien.jpg");
   background-size: auto;
 }
 
@@ -134,7 +134,7 @@ a:active {
 }
 @media (min-width: 47em) {
   .topnav__link {
-    font-size: clamp(1.35rem, 0.75rem + 1vw, 2rem);
+    font-size: clamp(1.35rem, 0.75rem + 1vw, 3rem);
     transition: 0.3s;
     position: relative;
     text-transform: initial;

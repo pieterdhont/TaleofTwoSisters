@@ -8,6 +8,7 @@
   "dependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "browser-sync": "^2.27.4",
     "cssnano": "^5.0.6",
     "gulp-babel": "^8.0.0",

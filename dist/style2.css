@@ -221,28 +221,20 @@ a,a:active,a:visited{
   margin-top:-0.5rem
 }
 
-.mb-20{
-  margin-bottom:5rem
+.mb-16{
+  margin-bottom:4rem
 }
 
 .mt-1{
   margin-top:0.25rem
 }
 
-.mt-20{
-  margin-top:5rem
-}
-
-.mt-4{
-  margin-top:1rem
-}
-
 .mt-16{
   margin-top:4rem
 }
 
-.mb-16{
-  margin-bottom:4rem
+.mt-4{
+  margin-top:1rem
 }
 
 .block{
@@ -308,27 +300,14 @@ a,a:active,a:visited{
   border-width:1px
 }
 
-.bg-gray-200{
-  --tw-bg-opacity:1;
-  background-color:rgb(229 231 235 / var(--tw-bg-opacity))
-}
-
-.bg-blue-500{
-  --tw-bg-opacity:1;
-  background-color:rgb(59 130 246 / var(--tw-bg-opacity))
-}
-
-.bg-\[blue-500\]{
-  background-color:blue-500
-}
-
-.bg-\[\]{
-  background-color:
-}
-
 .bg-\[\#02ccbc\]{
   --tw-bg-opacity:1;
   background-color:rgb(2 204 188 / var(--tw-bg-opacity))
+}
+
+.bg-gray-200{
+  --tw-bg-opacity:1;
+  background-color:rgb(229 231 235 / var(--tw-bg-opacity))
 }
 
 .object-cover{
@@ -344,16 +323,6 @@ a,a:active,a:visited{
 .px-4{
   padding-left:1rem;
   padding-right:1rem
-}
-
-.py-16{
-  padding-top:4rem;
-  padding-bottom:4rem
-}
-
-.py-12{
-  padding-top:3rem;
-  padding-bottom:3rem
 }
 
 .py-8{
@@ -1142,24 +1111,12 @@ video {
   }
 }
 
-.hover\:opacity-75:hover{
-  opacity:0.75
-}
-
-.group:hover .group-hover\:opacity-75{
-  opacity:0.75
-}
-
-.group:hover .group-hover\:opacity-50{
-  opacity:0.5
-}
-
 .group:hover .group-hover\:opacity-25{
   opacity:0.25
 }
 
-.group:hover .group-hover\:opacity-70{
-  opacity:0.7
+.group:hover .group-hover\:opacity-75{
+  opacity:0.75
 }
 
 @media not all and (min-width: 640px){
@@ -1185,11 +1142,6 @@ video {
   .sm\:px-6{
     padding-left:1.5rem;
     padding-right:1.5rem
-  }
-
-  .sm\:py-24{
-    padding-top:6rem;
-    padding-bottom:6rem
   }
 }
 

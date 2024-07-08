@@ -53,5 +53,6 @@ a:active {
 }
 
 .wrapper {
-  background-color: rgba(172, 158, 97, 0.3);
+  background-color: rgba(172, 158, 97, 0.2);
+  box-shadow: 0px 0px 70px 10px #000000;
 }/*# sourceMappingURL=main.css.map */

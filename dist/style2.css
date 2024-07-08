@@ -225,6 +225,10 @@ a,a:active,a:visited{
   margin-bottom:4rem
 }
 
+.mb-6{
+  margin-bottom:1.5rem
+}
+
 .mt-1{
   margin-top:0.25rem
 }
@@ -1068,6 +1072,14 @@ video {
 .wrapper{
   background-color:rgba(172,158,97,.2);
   box-shadow:0 0 70px 10px #000
+}
+
+.logo{
+  color:var(--forest-green);
+  display:flex;
+  font-family:TAN-MONCHERI;
+  font-size:clamp(.8rem,.75rem + 1vw,1.3rem);
+  justify-content:center
 }
 
 @media (min-width: 1280px){

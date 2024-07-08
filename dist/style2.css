@@ -1066,7 +1066,8 @@ video {
 }
 
 .wrapper{
-  background-color:rgba(172,158,97,.3)
+  background-color:rgba(172,158,97,.2);
+  box-shadow:0 0 70px 10px #000
 }
 
 @media (min-width: 1280px){

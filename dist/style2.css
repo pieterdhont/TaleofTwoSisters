@@ -5,7 +5,7 @@
   --mint-green:#bfd0c6;
   --mustard-yellow:#c5b672;
   --bright-teal:#02ccbc;
-  --forest-green:#349470;
+  --forest-green:#75eec1;
   --teal-green:#00625f;
   --berry-purple:#7c287f
 }
@@ -221,12 +221,12 @@ a,a:active,a:visited{
   margin-top:-0.5rem
 }
 
-.mb-16{
-  margin-bottom:4rem
+.mb-10{
+  margin-bottom:2.5rem
 }
 
-.mb-6{
-  margin-bottom:1.5rem
+.mb-12{
+  margin-bottom:3rem
 }
 
 .mt-1{
@@ -1075,7 +1075,7 @@ video {
 }
 
 .logo{
-  color:var(--forest-green);
+  color:var(--berry-purple);
   display:flex;
   font-family:TAN-MONCHERI;
   font-size:clamp(.8rem,.75rem + 1vw,1.3rem);
@@ -1137,6 +1137,22 @@ video {
     margin-left:-1rem
   }
 
+  .max-sm\:mr-6{
+    margin-right:1.5rem
+  }
+
+  .max-sm\:mr-7{
+    margin-right:1.75rem
+  }
+
+  .max-sm\:mr-8{
+    margin-right:2rem
+  }
+
+  .max-sm\:mr-9{
+    margin-right:2.25rem
+  }
+
   .max-sm\:justify-end{
     justify-content:flex-end
   }
@@ -1148,8 +1164,16 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:w-3\/4{
+    width:75%
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns:repeat(2, minmax(0, 1fr))
+  }
+
+  .sm\:justify-end{
+    justify-content:flex-end
   }
 
   .sm\:px-6{

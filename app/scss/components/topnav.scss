@@ -15,7 +15,7 @@ header {
   
   
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   
   @media (width < 47em) { 
@@ -30,9 +30,16 @@ header {
   
   .topnav {
 
+    @media (width >= 47em) {
+        margin-left: 4rem;
+    }
+
     &__logo{
         @apply h-50 w-50 rounded-full mr-10;
         
+        @media (width < 47em) {
+          margin-left: 1rem;
+        }
     }
     
     display: flex;
@@ -41,6 +48,7 @@ header {
     
     @media (width >= 47em) {
       padding-block: 3rem;
+      
     }
     
     button {

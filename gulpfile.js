@@ -20,17 +20,24 @@ const paths = {
   }
 };
 
-// Sass and Tailwind CSS Task
+// Sass -> Tailwind -> Autoprefixer -> Minify
 function scssTask() {
   return src(paths.styles.src, { sourcemaps: true })
+    // 1) Compile SCSS into CSS
+    .pipe(sass().on('error', sass.logError))
+
+    // 2) Process with Tailwind + Autoprefixer
     .pipe(postcss([
       tailwindcss(),
       autoprefixer()
     ]))
-    .pipe(sass().on('error', sass.logError))
+
+    // 3) Minify the result
     .pipe(postcss([
       cssnano()
     ]))
+
+    // 4) Write sourcemaps + output CSS
     .pipe(dest(paths.styles.dest, { sourcemaps: '.' }));
 }
 
@@ -57,7 +64,6 @@ function browserSyncServe(cb) {
   });
   cb();
 }
-
 function browserSyncReload(cb) {
   browsersync.reload();
   cb();

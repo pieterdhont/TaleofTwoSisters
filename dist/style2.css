@@ -241,6 +241,10 @@ a,a:active,a:visited{
   margin-top:1rem
 }
 
+.mt-12{
+    margin-top:3rem;
+}
+
 .block{
   display:block
 }
@@ -1079,7 +1083,7 @@ video {
   display:flex;
   font-family:TAN-MONCHERI;
   font-size:clamp(.8rem,.75rem + 1vw,1.3rem);
-  justify-content:center
+  justify-content:right;
 }
 
 @media (min-width: 1280px){

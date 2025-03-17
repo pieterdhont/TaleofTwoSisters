@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const btnOpen = document.querySelector("#btnOpen");
         const btnClose = document.querySelector("#btnClose");
         // Note: Use a valid media query syntax for width-based queries.
-        const media = window.matchMedia("(max-width: 40em)");
+        const media = window.matchMedia("(max-width: 46.999em)");
   
         const topNavMenu = document.querySelector(".topnav__menu");
         const main = document.querySelector("main");

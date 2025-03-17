@@ -18,11 +18,11 @@ header {
   justify-content: space-between;
 
   
-  @media (width < 47em) { 
+  @media (max-width: 46.999em) { 
     border: none; 
   }
 
-  @media (width >= 47em) {
+  @media (min-width: 47em) {
     justify-content: center;
     background-color: var(--mustard-yellow-70);
   }
@@ -30,14 +30,14 @@ header {
   
   .topnav {
 
-    @media (width >= 47em) {
+    @media (min-width: 47em) {
         margin-left: 4rem;
     }
 
     &__logo{
         @apply h-50 w-50 rounded-full mr-10;
         
-        @media (width < 47em) {
+        @media (max-width: 46.999em) {
           margin-left: 1rem;
         }
     }
@@ -46,7 +46,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     
-    @media (width >= 47em) {
+    @media (min-width: 47em) {
       padding-block: 3rem;
       
     }
@@ -56,7 +56,7 @@ header {
       border: none;
       padding: 0;
       
-      @media (width >= 47em) {
+      @media (min-width: 47em) {
         display: none;
       }
     }
@@ -82,7 +82,7 @@ header {
     }
     
     &__menu {
-      @media (width < 47em) {
+      @media (max-width: 46.999em) {
         position: fixed;
         inset: 0;
         padding: 1.5rem;
@@ -91,7 +91,7 @@ header {
         transition: translate 0.5s ease-in-out;
       }
       
-      @media (width < 47em) and (prefers-reduced-motion) {
+      @media (max-width: 46.999em) and (prefers-reduced-motion) {
         translate: 0;
         opacity: 0;
         transition: opacity 500ms ease-in-out;
@@ -105,7 +105,7 @@ header {
       margin: 0;
       padding: 0;
       
-      @media (max-width: 47em) {
+      @media (max-width: 46.999em) {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;

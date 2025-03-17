@@ -36,17 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const body = document.querySelector("body");
   
         function setupTopNav(e) {
-          if (e.matches) {
-            // is mobile
-            console.log("is mobile");
-            topNavMenu.setAttribute("inert", "");
-            topNavMenu.style.transition = "none";
-          } else {
-            // is tablet/desktop
-            console.log("is tablet/desktop");
-            topNavMenu.removeAttribute("inert");
+            if (e.matches) {
+              // is mobile
+              console.log("is mobile");
+              // Only set inert if the menu is not already open
+              if (btnOpen.getAttribute("aria-expanded") !== "true") {
+                topNavMenu.setAttribute("inert", "");
+                topNavMenu.style.transition = "none";
+              }
+            } else {
+              // is tablet/desktop
+              console.log("is tablet/desktop");
+              topNavMenu.removeAttribute("inert");
+            }
           }
-        }
   
         function openMobileMenu() {
           btnOpen.setAttribute("aria-expanded", "true");

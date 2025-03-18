@@ -1,9 +1,6 @@
 // Wait for the DOM to be fully loaded.
 document.addEventListener("DOMContentLoaded", () => {
-    // --------------------------------------------------------------------
-    // Header Injection:
-    // Fetch header.html and insert it into the #header-placeholder.
-    // --------------------------------------------------------------------
+    
     fetch('header.html')
       .then(response => {
         if (!response.ok) {
@@ -14,21 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         document.getElementById('header-placeholder').innerHTML = data;
         
-        // --------------------------------------------------------------------
-        // Move the rest of your code here so it runs after the header is loaded.
-        // This ensures that #btnOpen, #btnClose, and .topnav__menu are available.
-        // --------------------------------------------------------------------
+       
         
-        console.log("HELLO");
+       
   
-        const test = () => {
-          console.log("this is a test");
-        };
-  
-        // Query header-related elements AFTER the header has been injected
+        
         const btnOpen = document.querySelector("#btnOpen");
         const btnClose = document.querySelector("#btnClose");
-        // Note: Use a valid media query syntax for width-based queries.
+        
         const media = window.matchMedia("(max-width: 46.999em)");
   
         const topNavMenu = document.querySelector(".topnav__menu");
@@ -73,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         setupTopNav(media);
   
-        // Attach event listeners now that header elements exist
+        
         btnOpen.addEventListener("click", openMobileMenu);
         btnClose.addEventListener("click", closeMobileMenu);
   

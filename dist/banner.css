@@ -1,7 +1,7 @@
 .banner {
   width: 100vw;
   height: 35vh;
-  background-image: url("../app/img/tak_05_edited.jpg");
+  background-image: url("../../app/img/tak_05_edited.jpg");
   position: relative;
   background-size: 120% auto;
   background-position: 50% center;

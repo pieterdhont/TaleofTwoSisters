@@ -1,18 +1,14 @@
 .banner {
     width: 100vw;                   // Full viewport width
-    height: 35vh;                   // Adjust height as needed
+    height: 50vh;                   // Adjust height as needed
     background-image: url('../app/img/tak_05_edited.jpg');
     position: relative;
     background-size: 120% auto;  // Force the image to be 120% of the container’s width
     background-position: 50% center;
     background-repeat: no-repeat;
-    animation: subtleMove 90s infinite alternate; // Apply subtle movement animation
+    animation: subtleMove 80s infinite alternate; // Apply subtle movement animation
 
-    @media (orientation: landscape) and (max-width: 46.999rem) {
-        .banner {
-          height: 50vh; // Increase height for small devices in landscape
-        }
-    }
+    
 
     &::before {
         content: "";

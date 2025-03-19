@@ -1,17 +1,12 @@
 .banner {
   width: 100vw;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../app/img/tak_05_edited.jpg");
   position: relative;
   background-size: 120% auto;
   background-position: 50% center;
   background-repeat: no-repeat;
-  animation: subtleMove 90s infinite alternate;
-}
-@media (orientation: landscape) and (max-width: 46.999rem) {
-  .banner .banner {
-    height: 50vh;
-  }
+  animation: subtleMove 80s infinite alternate;
 }
 .banner::before {
   content: "";

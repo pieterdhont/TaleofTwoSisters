@@ -140,12 +140,8 @@ header {
                 }
             }
 
-            // Active state for mobile devices (triggered on tap)
-            &:active {
-                color: var(--white);
-                background-size: 40% 0.1em;
-                background-position: 10% 100%, 90% 100%;
-            }
+            
+            
 
 
         }

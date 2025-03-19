@@ -183,9 +183,4 @@ header .topnav__link {
     background-size: 40% 0.1em;
     background-position: 10% 100%, 90% 100%;
   }
-}
-header .topnav__link:active {
-  color: var(--white);
-  background-size: 40% 0.1em;
-  background-position: 10% 100%, 90% 100%;
 }/*# sourceMappingURL=topnav.css.map */

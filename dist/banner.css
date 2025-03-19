@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   animation: subtleMove 90s infinite alternate;
 }
+@media (orientation: landscape) and (max-width: 46.999rem) {
+  .banner .banner {
+    height: 50vh;
+  }
+}
 .banner::before {
   content: "";
   position: absolute;

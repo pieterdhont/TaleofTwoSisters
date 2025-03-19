@@ -85,12 +85,7 @@ header .topnav {
   }
 }
 header .topnav__logo {
-  @apply h-50 w-50 rounded-full mr-10;
-}
-@media (max-width: 46.999em) {
-  header .topnav__logo {
-    margin-left: 1rem;
-  }
+  @apply h-50 w-50 rounded-full mr-10 ml-4;
 }
 @media (min-width: 47em) {
   header .topnav {
@@ -167,7 +162,7 @@ header .topnav__link {
 }
 @media (min-width: 47em) {
   header .topnav__link {
-    font-size: clamp(1.35rem, 0.75rem + 1vw, 3rem);
+    font-size: clamp(1.34rem, 0.75rem + 1vw, 3rem);
     transition: 0.3s;
     position: relative;
     text-transform: initial;

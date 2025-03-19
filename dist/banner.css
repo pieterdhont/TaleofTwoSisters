@@ -1,0 +1,31 @@
+.banner {
+  width: 100vw;
+  height: 35vh;
+  background-image: url("/app/img/tak_05_edited.jpg");
+  position: relative;
+  background-size: 120% auto;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  animation: subtleMove 90s infinite alternate;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 98, 93, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes subtleMove {
+  from {
+    background-position: 65% 45%;
+  }
+  to {
+    background-position: 45% 65%;
+  }
+}/*# sourceMappingURL=banner.css.map */

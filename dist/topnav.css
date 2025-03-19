@@ -81,7 +81,7 @@ header .topnav {
 }
 @media (min-width: 47em) {
   header .topnav {
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
 }
 header .topnav__logo {

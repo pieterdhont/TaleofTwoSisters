@@ -1,141 +1,153 @@
 @use "../globals";
 
 header {
-  background-color: var(--mustard-yellow-70);
-
-  //   margin-top: 1.2rem;
-  //   margin-bottom: 2.5rem;
-  padding-block: 1rem;
-
-  border-top: 1px solid var(--white);
-
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: 46.999em) {
-    border: none;
-  }
-
-  @media (min-width: 47em) {
-    justify-content: center;
     background-color: var(--mustard-yellow-70);
-  }
 
-  .topnav {
-    @media (min-width: 47em) {
-      margin-left: 3rem;
-    }
+    //   margin-top: 1.2rem;
+    //   margin-bottom: 2.5rem;
+    padding-block: 1rem;
 
-    &__logo {
-      @apply h-50 w-50 rounded-full mr-10 ml-4;
-
-      @media (max-width: 46.999em) {
-        
-      }
-    }
+    border-top: 1px solid var(--white);
 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 46.999em) {
+        border: none;
+    }
 
     @media (min-width: 47em) {
-      padding-block: 3rem;
+        justify-content: center;
+        background-color: var(--mustard-yellow-70);
     }
 
-    button {
-      background: none;
-      border: none;
-      padding: 0;
-
-      @media (min-width: 47em) {
-        display: none;
-      }
-    }
-
-    &__open[aria-expanded="true"] {
-      + .topnav__menu {
-        translate: 0;
-
-        @media (prefers-reduced-motion) {
-          opacity: 1;
+    .topnav {
+        @media (min-width: 47em) {
+            margin-left: 3rem;
         }
-      }
-    }
 
-    &__close {
-      display: block;
-      margin-inline-start: auto;
-      margin-block-end: 8rem;
+        &__logo {
+            @apply h-50 w-50 rounded-full mr-10 ml-4;
 
-      img {
-        width: 4rem;
-      }
-    }
-
-    &__menu {
-      @media (max-width: 46.999em) {
-        position: fixed;
-        inset: 0;
-        padding: 1.5rem;
-        background-color: var(--teal-green);
-        translate: 100vw 0;
-        transition: translate 0.5s ease-in-out;
-      }
-
-      @media (max-width: 46.999em) and (prefers-reduced-motion) {
-        translate: 0;
-        opacity: 0;
-        transition: opacity 500ms ease-in-out;
-      }
-    }
-
-    &__links {
-      display: flex;
-      gap: 1.8rem;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-
-      @media (max-width: 46.999em) {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-        line-height: 2.25em;
-      }
-    }
-
-    &__item {
-      list-style: none;
-    }
-
-    &__link {
-      font-family: "TAN-MONCHERI";
-      color: var(--white);
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      line-height: 0;
-
-      @media (min-width: 47em) {
-        font-size: clamp(1.34rem, 0.75rem + 1vw, 3rem);
-        transition: 0.3s;
-        position: relative; // Needed for the ::before element to position correctly
-        text-transform: initial;
-        color: var(--black);
-        --c: linear-gradient(#000 0 0);
-        /* update the color here */
-        padding-bottom: 0.15em;
-        background: var(--c), var(--c);
-        background-size: 0.3em 0.1em;
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        transition: 0.3s linear, background-size 0.3s 0.2s linear;
-
-        &:hover {
-          color: var(--white);
-          background-size: 40% 0.1em;
-          background-position: 10% 100%, 90% 100%;
+            @media (max-width: 46.999em) {}
         }
-      }
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media (min-width: 47em) {
+            padding-block: 3rem;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+
+            @media (min-width: 47em) {
+                display: none;
+            }
+        }
+
+        &__open[aria-expanded="true"] {
+            +.topnav__menu {
+                translate: 0;
+
+                @media (prefers-reduced-motion) {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__close {
+            display: block;
+            margin-inline-start: auto;
+            margin-block-end: 8rem;
+
+            img {
+                width: 4rem;
+            }
+        }
+
+        &__menu {
+            @media (max-width: 46.999em) {
+                position: fixed;
+                inset: 0;
+                padding: 1.5rem;
+                background-color: var(--teal-green);
+                translate: 100vw 0;
+                transition: translate 0.5s ease-in-out;
+            }
+
+            @media (max-width: 46.999em) and (prefers-reduced-motion) {
+                translate: 0;
+                opacity: 0;
+                transition: opacity 500ms ease-in-out;
+            }
+        }
+
+        &__links {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            @media (max-width: 46.999em) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                line-height: 2.25em;
+            }
+        }
+
+        &__item {
+            list-style: none;
+        }
+
+        &__link {
+            font-family: "TAN-MONCHERI";
+            color: var(--white);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            line-height: 0;
+
+            @media (min-width: 47em) {
+                font-size: clamp(1.34rem, 0.75rem + 1vw, 3rem);
+                transition: 0.3s;
+                position: relative; // Needed for the ::before element to position correctly
+                text-transform: initial;
+                color: var(--black);
+                --c: linear-gradient(#000 0 0);
+                /* update the color here */
+                padding-bottom: 0.15em;
+                background: var(--c), var(--c);
+                background-size: 0.3em 0.1em;
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                transition: 0.3s linear, background-size 0.3s 0.2s linear;
+
+
+            }
+
+            // Hover effect for devices that support hover (e.g., desktop with mouse)
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: var(--white);
+                    background-size: 40% 0.1em;
+                    background-position: 10% 100%, 90% 100%;
+                }
+            }
+
+            // Active state for mobile devices (triggered on tap)
+            &:active {
+                color: var(--white);
+                background-size: 40% 0.1em;
+                background-position: 10% 100%, 90% 100%;
+            }
+
+
+        }
     }
-  }
 }

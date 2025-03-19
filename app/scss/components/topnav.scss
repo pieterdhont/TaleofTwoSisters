@@ -112,6 +112,7 @@ header {
             font-size: 1.5rem;
             text-transform: uppercase;
             line-height: 0;
+            border-radius: 0.5rem;
 
             @media (min-width: 47em) {
                 font-size: clamp(1.34rem, 0.75rem + 1vw, 3rem);
@@ -140,7 +141,13 @@ header {
                 }
             }
 
-            
+            &:active {
+                // Apply a subtle background color change
+                background-color: rgba(213, 117, 75, 0.5);
+                // Slightly scale down to simulate a press
+                transform: scale(0.98);
+                
+              }
             
 
 

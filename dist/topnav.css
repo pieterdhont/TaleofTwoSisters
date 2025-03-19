@@ -159,6 +159,7 @@ header .topnav__link {
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 0;
+  border-radius: 0.5rem;
 }
 @media (min-width: 47em) {
   header .topnav__link {
@@ -183,4 +184,8 @@ header .topnav__link {
     background-size: 40% 0.1em;
     background-position: 10% 100%, 90% 100%;
   }
+}
+header .topnav__link:active {
+  background-color: rgba(213, 117, 75, 0.5);
+  transform: scale(0.98);
 }/*# sourceMappingURL=topnav.css.map */

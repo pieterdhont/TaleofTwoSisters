@@ -8,7 +8,7 @@
   background-position: 50% center;
   background-repeat: no-repeat;
   animation: subtleMove 80s infinite alternate;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .banner::before {
   content: "";

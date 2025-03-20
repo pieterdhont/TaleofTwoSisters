@@ -1,12 +1,14 @@
 .banner {
     width: 100%;                   // Full viewport width
-    height: 50vh;                   // Adjust height as needed
+    height: 50dvh;
+    min-height: 300px;                   // Adjust height as needed
     background-image: url('../app/img/tak_05_edited.jpg');
     position: relative;
     background-size: 120% auto;  // Force the image to be 120% of the container’s width
     background-position: 50% center;
     background-repeat: no-repeat;
     animation: subtleMove 80s infinite alternate; // Apply subtle movement animation
+    overflow-x: hidden; // Hide any horizontal overflow
 
     
 

@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           main.setAttribute("inert", "");
           bodyScrollLockUpgrade.disableBodyScroll(body);
           btnClose.focus();
+          document.querySelector("header").classList.add("menu-open");
         }
   
         function closeMobileMenu() {
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
           setTimeout(() => {
             topNavMenu.style.transition = "none";
           }, 500);
+          document.querySelector("header").classList.remove("menu-open");
         }
   
         setupTopNav(media);

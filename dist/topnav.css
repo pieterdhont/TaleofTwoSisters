@@ -169,7 +169,6 @@ header .topnav__link {
     text-transform: initial;
     color: var(--black);
     --c: linear-gradient(#000 0 0);
-    /* update the color here */
     padding-bottom: 0.15em;
     background: var(--c), var(--c);
     background-size: 0.3em 0.1em;
@@ -188,4 +187,11 @@ header .topnav__link {
 header .topnav__link:active {
   background-color: rgba(213, 117, 75, 0.5);
   transform: scale(0.98);
+}
+
+@media (max-width: 46.999em) {
+  header.menu-open .topnav__link:active {
+    background-color: rgba(59, 129, 126, 0.578);
+    transform: scale(0.98);
+  }
 }/*# sourceMappingURL=topnav.css.map */

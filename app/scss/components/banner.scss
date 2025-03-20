@@ -14,7 +14,7 @@
         content: "";
         position: absolute;
         inset: 0; // Fills the entire banner
-        background-color: rgba(0, 98, 93, 0.3);
+        background-color: rgba(0, 98, 93, 0.4);
         pointer-events: none; // So it doesn't block any interactions
         z-index: 1; // Place it behind the banner's content
       }

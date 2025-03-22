@@ -1,24 +1,24 @@
 .banner {
-    width: 100%;                   // Full viewport width
+    width: 100%;                  
     height: 50dvh;
-    min-height: 300px;                   // Adjust height as needed
+    min-height: 300px;                  
     background-image: url('../app/img/tak_05_edited.jpg');
     position: relative;
-    background-size: 120% auto;  // Force the image to be 120% of the container’s width
+    background-size: 100%;  
     background-position: 50% center;
     background-repeat: no-repeat;
-    animation: subtleMove 80s infinite alternate; // Apply subtle movement animation
-    overflow: hidden; // Hide any horizontal overflow
+    animation: subtleMove 80s infinite alternate; 
+    overflow: hidden; 
 
     
-
+  
     &::before {
         content: "";
         position: absolute;
         inset: 0; // Fills the entire banner
         background-color: rgba(0, 98, 93, 0.4);
         pointer-events: none; // So it doesn't block any interactions
-        z-index: 1; // Place it behind the banner's content
+        z-index: 1; 
       }
       
       // Ensure any content inside .banner is above the overlay
@@ -29,7 +29,7 @@
   
   }
   
-  // Global keyframes definition
+  
   @keyframes subtleMove {
     from {
       background-position: 65% 45%; // Start centered
